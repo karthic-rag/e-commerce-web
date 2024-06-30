@@ -1,0 +1,186 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+  font-family: "Poppins", sans-serif;
+  
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    align-items: center;
+    padding: 20px;
+}
+
+.links a{
+    text-decoration:none;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar-links {
+    display: flex;
+    column-gap: 20px;
+    text-align: center;
+}
+
+.navbar-menu{
+    display: none;
+}
+
+.side-navbar{
+    background-color: lightslategray;
+    position:fixed;
+    right: -60%;
+    height: 100%;
+    width: 50%;
+    top:0;
+    transition: 2s;
+}
+
+
+
+#xmark{
+    padding: 20px;
+}
+.side-links {
+
+    padding: 20px;
+}
+.side-links a{
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+    font-weight: bold ;
+}
+
+.innerhead p,h1,button{
+   margin-top: 20px;
+   margin-right: 20px;
+}
+.contactus{
+    margin-top: 20px;
+    background-color: lightslategray;
+    width: 40%;
+    height: 500px;
+    margin-left:25% ;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+form{
+    color: black;
+    text-align: left;
+    height: 500px;
+}
+
+form h4{
+   padding: 10px;
+   
+}
+
+form input{
+    width: 90%;
+    margin-left: 10px;
+    padding: 10px;
+    
+}
+
+form button{
+    margin-top: 40px;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border:none ;
+    background-color: blue;
+    color: white;
+}
+
+
+.bottomnav{
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin-top:30px ;
+    width: 100%;
+}
+
+#mess{
+    width: 90%;
+    margin-left: 10px;
+    
+    padding: 10px;
+    height: 100px;
+}
+
+.bottomnav i{
+    padding: 10px;
+    margin-top: 10px;
+}
+
+
+
+/* media query */
+
+@media screen and (max-width:800px){
+    .navbar-menu{
+        display: block;
+    }
+
+    .links a{
+        display: none;
+    }
+    .contactus{
+        margin-top: 20px;
+        background-color: lightslategray;
+        width: 80%;
+        height: 500px;
+        margin-left:8% ;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    
+    form{
+        color: black;
+        text-align: left;
+        height: 500px;
+    }
+    
+    form h4{
+       padding: 10px;
+    }
+    
+    form input{
+        width: 90%;
+        margin-left: 10px;
+        padding: 3px;
+    }
+    #mess{
+        width: 90%;
+        margin-left: 10px;
+        padding: 3px;
+        height: 100px;
+        bottom: 0;
+    } 
+
+    form button{
+        margin-left: 10px;
+        margin-top: 80px;
+        padding: 10px;
+        border-radius: 5px;
+        border:none ;
+        background-color: blue;
+        color: white;
+
+    }
+}

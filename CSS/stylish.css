@@ -1,0 +1,214 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+  font-family: "Poppins", sans-serif;
+  
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    align-items: center;
+    padding: 20px;
+}
+
+.links a{
+    text-decoration:none;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar-links {
+    display: flex;
+    column-gap: 20px;
+    text-align: center;
+}
+
+.navbar-menu{
+    display: none;
+}
+
+.side-navbar{
+    background-color: lightslategray;
+    position:fixed;
+    right: -60%;
+    height: 100%;
+    width: 50%;
+    top:0;
+    transition: 2s;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.ima1{
+  width: 300px;
+  height: 300px;
+}
+
+#xmark{
+    padding: 20px;
+}
+.side-links {
+
+    padding: 20px;
+}
+.side-links a{
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+    font-weight: bold ;
+}
+
+.innerhead p,h1,button{
+   margin-top: 20px;
+   margin-right: 20px;
+}
+
+.shop{
+    background-color: black;
+    color: white;
+    width: 30%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+}
+.service2 {
+    display: flex;   
+}
+
+.service2 div{
+    background-color: rgb(167, 82, 247);
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+}
+.service{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.arrivals
+{
+    margin-top:20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.arrivals img{
+    width: 200px;
+    height: 150px;
+    
+}
+
+.arrivals div{
+    margin: 5px;
+    width: 200px;
+    height: 150px; 
+    position: relative;   
+}
+
+.shopbutton{
+    position:absolute;
+    right: 20px;
+    top: 50px;
+    height: 40px;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.bottomnav{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin-top:30px ;
+}
+
+.bottomnav i{
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.sub{
+    padding: 10px;
+    border:none ;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+}
+
+#news{
+    width: 80%;
+    height: 40px;
+    border: solid;
+}
+.search{
+    margin-top: 30px;
+    padding: 20px;
+    border: solid;
+    width: 80%;
+    border-radius: 10px;  
+}
+
+#search{
+    position: relative;
+    right: 30px;
+}
+
+.collection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+.coll{
+    text-align: center;
+    flex-basis: 18%;
+    margin: 5px;
+}
+.coll img{
+    width: 200px;
+    height: 200px;
+    
+}
+
+
+/* media query */
+
+@media screen and (max-width:600px){
+    .navbar-menu{
+        display: block;
+    }
+
+    .links a{
+        display: none;
+    }
+
+    .ima1{
+        display: none;
+    }
+
+    .arrivals img{
+        width: 200px;
+        height: 150px;
+        flex-basis: 45%;
+        
+    }
+    .coll{
+        flex-basis: 45%;
+    }
+}
